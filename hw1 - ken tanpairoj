@@ -1,0 +1,48 @@
+#include <string>
+#include <iostream>
+#include <array>
+
+using namespace std;
+
+class arrayReverse
+{
+public:
+   static void reverseArray (int arr[], int size);
+};
+
+int main()
+{
+   int myArray[7] = {1,3,5,7,9,11,13}, mySize;
+
+   mySize = sizeof(myArray)/sizeof(*myArray);
+
+   cout << "\n\nbefore reverse:";
+   for (int i = 0; i < (sizeof(myArray)/sizeof(*myArray)); i++)
+   {
+      cout << " " << myArray [i];
+   }
+
+   arrayReverse::reverseArray(myArray, mySize );
+
+   cout << "\nafter  reverse:";
+   for (int i = 0; i < (sizeof(myArray)/sizeof(*myArray)); i++)
+   {
+      cout << " " << myArray [i];
+   }
+
+   return 0;
+}
+
+void arrayReverse::reverseArray(int arr[], int size)
+{
+   int count=(size/2), temp, idx=0;
+
+   while (count > 0)
+   {
+      temp = arr[size - idx - 1];
+      arr[size - idx -1] = arr [idx];
+      arr[idx] = temp;
+      count--;
+      idx++;
+   }
+}
