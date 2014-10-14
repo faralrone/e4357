@@ -1,0 +1,38 @@
+
+#include "stdio.h"
+#include "string.h"
+#include <iostream>
+using namespace std;
+
+void comp_string(char *, char *);
+bool comp_int(int *, int *);
+
+int main()
+{
+   char src_string[50] = "I am source" ;
+   char * src_ptr;
+   char dest_string [50] = "We are destination";
+   char * dest_ptr;
+
+   src_ptr = src_string;
+   dest_ptr = dest_string;
+
+   cout << "\nDestination string before copy is -->  " << dest_string << endl;
+
+   comp_string (src_ptr, dest_ptr);
+   cout << "\nDestination string after copy is -->  " << dest_string << endl;
+
+   return (0);
+}
+
+
+void comp_string(char * src_ptr, char * dest_ptr)
+{
+     while (*dest_ptr)
+     {
+         *dest_ptr = *src_ptr;      
+         src_ptr++;
+         dest_ptr++;
+     }
+}
+
