@@ -1,0 +1,35 @@
+Hardware RX62N
+
+CPU  •  Maximum operating frequency: 100 MHz 
+•  32-bit RX CPU 
+•  Minimum instruction execution time: One instruction per state (cycle of the system clock)
+•  Address space: 4-Gbyte linear 
+•  Register set of the CPU 
+General purpose: Sixteen 32-bit registers 
+Control: Nine 32-bit registers 
+Accumulator: One 64-bit register 
+•  Basic instructions: 73 
+•  Floating-point instructions: 8 
+•  DSP instructions: 9 
+•  Addressing modes: 10 
+•  Data arrangement 
+Instructions: Little endian 
+Data: Selectable as little endian or big endian 
+•  On-chip 32-bit multiplier: 32 x 32 →64 bits 
+•  On-chip divider: 32 / 32 →32 bits 
+•  Barrel shifter: 32 bits 
+•  Memory-protection unit (MPU) (as an optional function)*
+1
+CPU 
+FPU  •  Single precision (32-bit) floating point 
+•  Data types and floating-point exceptions in conformance with the IEEE754 standard 
+ROM  •  ROM capacity: 512 Kbytes (max.) 
+•  Two on-board programming modes 
+Boot mode (The user MAT is programmable via the SCI and USB.) 
+User program mode 
+•  Parallel programmer mode (for off-board programming) 
+RAM  RAM capacity: 96 Kbytes (max.) 
+Memory 
+Data flash  Data flash capacity: 32 Kbytes 
+MCU operating modes  Single-chip mode, on-chip ROM enabled expansion mode, and on-chip ROM disabled 
+expansion mode (software switching) 
