@@ -1,0 +1,25 @@
+compiled and copy bin file to HW
+exported program to uVision and GCC ARM
+
+differences are uVision has project file (uvproj), uvopot files
+
+what mbed APIs that mbed support.
+  lots of API supported. For example, in mbed\Classes
+  AnalogIn
+  AnalogOut
+  BusIn
+  BusInOut
+  BusOut
+  DigitalIn
+  DigitalInOut
+  DigitalOut
+  
+  
+
+what is the mbed project directory layout
+- Classes
+- Files
+- Structs
+- Groups
+
+
