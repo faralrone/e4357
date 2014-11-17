@@ -9,34 +9,33 @@ void delay(void);
 #define READ_REG(_reg_) (*((volatile unsigned char *)(_reg_)))
 int main()
 {
-WRITE_REG (FIO0DIR0, 0x00); // set all bits of port 0 byte 0 to input
-WRITE_REG (FIO2DIR0, 0xFF); // set port 2 byte 0 to output
-while(1)
-{
-// if (FIO0PIN0 & 0x01 ==1)
-if (READ_REG(FIO0PIN0) & 0x01 ==1)
-{ // bit test port 0 pin 0 (mbed pin 9)
-WRITE_REG (FIO2PIN0, 0x2);
-delay();
-WRITE_REG (FIO2PIN0, 0x4);
-delay();
-WRITE_REG (FIO2PIN0, 0x8);
-delay();
-WRITE_REG (FIO2PIN0, 0x10);
-delay();
-WRITE_REG (FIO2PIN0, 0x20);
-delay();
-}
-else
-{
-WRITE_REG (FIO2PIN0,0x1);
-delay();
-WRITE_REG (FIO2PIN0,0x0);
-delay();
-}
-}
+   WRITE_REG (FIO0DIR0, 0x00); // set all bits of port 0 byte 0 to input
+   WRITE_REG (FIO2DIR0, 0xFF); // set port 2 byte 0 to output
+   while(1)
+   {
+      if (READ_REG(FIO0PIN0) & 0x01 ==1)
+      { // bit test port 0 pin 0 (mbed pin 9)
+         WRITE_REG (FIO2PIN0, 0x2);
+         delay();
+         WRITE_REG (FIO2PIN0, 0x4);
+         delay();
+         WRITE_REG (FIO2PIN0, 0x8);
+         delay();
+         WRITE_REG (FIO2PIN0, 0x10);
+         delay();
+         WRITE_REG (FIO2PIN0, 0x20);
+         delay();
+      }
+      else
+      {
+         WRITE_REG (FIO2PIN0,0x1);
+         delay();
+         WRITE_REG (FIO2PIN0,0x0);
+         delay();
+      }
+    }
 }
 void delay(void)
 {
-wait (0.4);
+   wait (0.4);
 }
