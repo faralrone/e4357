@@ -161,5 +161,4 @@ Bitmap bitmSan3 = {
   Santa3 ,  // Pointer to picture data 
 };
 
-
 #endif
