@@ -5,7 +5,15 @@ inline int CircularBufferIsFull(CircularBuffer* que)
 inline int CircularBufferIsEmpty(CircularBuffer* que)
 
 
+inline int CircularBufferIsFull(CircularBuffer* que)
+{
+    return ((que->writePointer + 1) % que->size == que->readPointer);
+}
 
+inline int CircularBufferIsEmpty(CircularBuffer* que)
+{
+    return ((que->readPointer + 1) % que->size == que->writePointer);
+}
 
 
 --------------------------------------------------------------------
