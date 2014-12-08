@@ -1,0 +1,28 @@
+BEGIN
+--------------------------------------------------------------------
+1. What is the _mask value for LED1?
+What is the address of FIOSET?
+- FIOMask address for LED1 = 0x2009 C030
+- FIOSET address for LED1 = 0x2009 C038
+--------------------------------------------------------------------
+2. What is the RS232 Frame?
+
+- In asynchronous RS-232 serial protocols, the frame consists of one start bit, seven or eight data bits, parity bits, and stop bits.
+
+--------------------------------------------------------------------
+3. Explain the start and stop conditions of i2c?
+
+start condition = SDA (Data) low and then SCL (clock) low
+stop condition = Bus releases SCL (high) and SDA (high)
+
+--------------------------------------------------------------------
+4. Is the i2c acknowledge SDA LOW or SDA HIGH?
+
+SDA low
+
+
+--------------------------------------------------------------------
+5. Tell me about the DDR3 write leveling Concept in one sentence.
+(ref: slides)
+
+DDR3 Write and Read Leveling is to allow some mechanism for the memory controller to adjust internal DQS to compensate for unbalanced loading on the board for write and read operations.
