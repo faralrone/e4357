@@ -1,0 +1,33 @@
+BEGIN
+--------------------------------------------------------------------
+Q1: Implement the following inline functions:
+inline int CircularBufferIsFull(CircularBuffer* que)
+inline int CircularBufferIsEmpty(CircularBuffer* que)
+
+
+
+
+
+--------------------------------------------------------------------
+Q2: How to compute "Interrupt Latency"?
+
+An oscilloscope is needed to measure interupt latency. Use a pin from GPIO interface to generate the interrupt. Monitored on the oscilloscope. At the start of the interrupt service routine, another pin, which is also being monitored, is toggled. The interval timing between the two signals can be read from the oscilloscope.
+
+
+--------------------------------------------------------------------
+Q3: Serial pc(USBTX, USBRX); // tx, rx
+What API (function) do you use to change the baud rate?
+
+pc.baud(xxxx)
+
+
+--------------------------------------------------------------------
+Q4: How many bit(s) does TDO have? Is TDO an input or output type? (Ref: JTAG Pins)
+
+1 bit, output. TDO = test data out
+
+--------------------------------------------------------------------
+Q5:
+What is the address of ledArr[0]?
+What is the address of ch?
+
