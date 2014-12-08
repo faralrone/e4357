@@ -7,7 +7,8 @@ What is the address of FIOSET?
 --------------------------------------------------------------------
 2. What is the RS232 Frame?
 
-- In asynchronous RS-232 serial protocols, the frame consists of one start bit, seven or eight data bits, parity bits, and stop bits.
+- In asynchronous RS-232 serial protocols, the frame consists of one start bit, 
+seven or eight data bits, parity bits, and stop bits.
 
 --------------------------------------------------------------------
 3. Explain the start and stop conditions of i2c?
@@ -25,4 +26,6 @@ SDA low
 5. Tell me about the DDR3 write leveling Concept in one sentence.
 (ref: slides)
 
-DDR3 Write and Read Leveling is to allow some mechanism for the memory controller to adjust internal DQS to compensate for unbalanced loading on the board for write and read operations.
+DDR3 Write and Read Leveling is to allow some mechanism for the memory controller 
+to adjust internal DQS to compensate for unbalanced loading on the board for write 
+and read operations.
